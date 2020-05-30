@@ -75,21 +75,22 @@ body{
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 125px;
+    padding-right: 125px; 
 }
 
-.logoWrapper {
+.logoWrapper img {
     width: 50%;
     margin-bottom: 20px;
 
 }
 
+
 .imgTextWrapper .subtitle {
     transition: 1s;
     font-weight: 600;
     color: transparent;
-    
+
 }
 .imgTextWrapper:hover .subtitle {
     font-weight: 600;
@@ -97,7 +98,28 @@ body{
     
 }
 
+
 .imgDarken {
     transition: 1s;
     filter: brightness(10%);
 }
+
+/* About page styles: */
+
+.twoColumnWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.profileImageWrapper img{
+    width: 100%;
+}
+
+.profileContentWrapper {
+    padding: 30px;
+}
+.profileContentWrapper h1 {
+    color: lightseagreen;
+}
+
