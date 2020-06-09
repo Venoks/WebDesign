@@ -15,6 +15,12 @@
                     <div class="navBarLinks">
                         <a href="about.html">About</a>
                     </div>
+                    <div class="navBarLinks">
+                        <a href="shop.html">Shop</a>
+                    </div>
+                    <div class="navBarLinks">
+                        <a href="contact.html">Contact</a>
+                    </div>
                 </div>
                 <div class="rightSide">
                     <div class="brand">
@@ -25,10 +31,11 @@
             
             
             <!-- Above was all about the navigation bar. Below will be about the main page with the images. It is therefore copied 12 times for 12 images -->
-            <div class="contentWrapper">
-                <div class="itemsWrapper">
+            <div class="contentWrapper"> <!-- Class to reference the entire image part of the website -->
+                <div class="itemsWrapper"> <!-- Class for all items. Meaning all image parts -->
                     
-                    <div class="itemWrapper">
+                    <!-- Each little image cube on the screen -->
+                    <div class="itemWrapper"> 
                         <div class="imgBackground" style="background-image: url(Images/ask1.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -42,6 +49,22 @@
                         </div>
                     </div>
                     
+                    <!-- Each little image cube on the screen -->
+                    <div class="itemWrapper"> 
+                        <div class="imgBackground" style="background-image: url(Images/AboutPic.jpg)"></div>
+                        
+                        <div class="imgTextWrapper">
+                            <div class="logoWrapper">
+                                <img src="Images/quip.png">
+                            </div>
+                            
+                            <div class="subtitle">
+                                I am a photographer named Andre the Giant.
+                            </div>
+                        </div>
+                    </div> 
+                    
+                <!-- Repeating the same thing multiple times -->
                     <div class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask2.png)"></div>
                         
@@ -140,20 +163,6 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
-                        <div class="imgBackground" style="background-image: url(Images/image02.jpg)"></div>
-                        
-                        <div class="imgTextWrapper">
-                            <div class="logoWrapper">
-                                <img src="Images/quip.png">
-                            </div>
-                            
-                            <div class="subtitle">
-                                I am a photographer named Andre the Giant.
-                            </div>
-                        </div>
-                    </div>
-                    
                     
                     
                 </div>
@@ -168,6 +177,7 @@
         
         imgItems.forEach(imgItem => {
             imgItem.addEventListener('mouseover', () => {
+                console.log(imgItem);
                 imgItem.childNodes[1].classList.add('imgDarken');
             })
         
