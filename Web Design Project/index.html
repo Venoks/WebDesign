@@ -29,13 +29,22 @@
                 </div>
             </div>
             
+            <div  id="filter" class="Filter">
+            <div><h1>Filter Art</h1>
+                <button id="button1">Black and white</button>
+                <button id="button2">Color</button>
+            </div>
+            </div>
+            
+            
+            
             
             <!-- Above was all about the navigation bar. Below will be about the main page with the images. It is therefore copied 12 times for 12 images -->
             <div class="contentWrapper"> <!-- Class to reference the entire image part of the website -->
                 <div class="itemsWrapper"> <!-- Class for all items. Meaning all image parts -->
                     
                     <!-- Each little image cube on the screen -->
-                    <div class="itemWrapper"> 
+                    <div id="panel1" class="itemWrapper"> 
                         <div class="imgBackground" style="background-image: url(Images/ask1.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -50,7 +59,7 @@
                     </div>
                     
                     <!-- Each little image cube on the screen -->
-                    <div class="itemWrapper"> 
+                    <div id="panel2" class="itemWrapper"> 
                         <div class="imgBackground" style="background-image: url(Images/AboutPic.jpg)"></div>
                         
                         <div class="imgTextWrapper">
@@ -65,7 +74,7 @@
                     </div> 
                     
                 <!-- Repeating the same thing multiple times -->
-                    <div class="itemWrapper">
+                    <div id="panel3" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask2.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -79,7 +88,7 @@
                         </div>
                     </div> 
                     
-                    <div class="itemWrapper">
+                    <div id="panel4" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask3.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -93,7 +102,7 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
+                    <div id="panel5" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask4.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -107,7 +116,7 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
+                    <div id="panel6" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask6.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -121,7 +130,7 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
+                    <div id="panel7" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/ask7.png)"></div>
                         
                         <div class="imgTextWrapper">
@@ -135,7 +144,7 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
+                    <div id="panel8" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/image02.jpg)"></div>
                         
                         <div class="imgTextWrapper">
@@ -149,7 +158,7 @@
                         </div>
                     </div>
                     
-                    <div class="itemWrapper">
+                    <div id="panel9" class="itemWrapper">
                         <div class="imgBackground" style="background-image: url(Images/image02.jpg)"></div>
                         
                         <div class="imgTextWrapper">
@@ -186,4 +195,42 @@
             })
         })
     </script>
+        
+     <script src="jquery-3.5.1.js"></script> 
+        <script>
+        $(document).ready(function(){
+            
+          $("#filter").css({
+              color:'blue',
+              fontWeight:'bold'
+              
+          });
+            $("#filter").hide().delay(1000).fadeIn(1000);
+            $("#button1").hide().delay(1000).fadeIn(1000);
+            $("#button2").hide().delay(1000).fadeIn(1000);
+            
+            $("#button1").on('click',function(){
+                $("#button1").css({
+                   fontWeight:'bold' 
+                });
+                $("#panel1").toggle();
+                $("#panel4").toggle();
+                $("#panel5").toggle();
+                $("#panel7").toggle();
+                
+            });
+            
+             $("#button2").on('click',function(){
+                  $("#button2").css({
+                   fontWeight:'bold' 
+                });
+                $("#panel2").toggle();
+                $("#panel3").toggle();
+                $("#panel6").toggle();
+                $("#panel8").toggle();
+                $("#panel9").toggle();
+                
+            });  
+        });
+        </script>       
 </html>
