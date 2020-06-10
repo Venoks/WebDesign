@@ -1,0 +1,6 @@
+Too bad buddy. You can't contact us yet.
+<br><br>
+However. This button utilizes AJAX to read a .txt file and show it on the webpage.
+<br><br>
+I hope that atleast impresses you a little bit.
+
