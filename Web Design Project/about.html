@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="rightSide">
-                    <div class="brand">
+                    <div id = "brand1" class="brand">
                         <div>GROUP COOLIO'S</div>
                     </div>
                 </div>
@@ -34,13 +34,13 @@
             <div class="contentWrapper">
                 <div class="twoColumnWrapper"> 
                     <div class="profileImageWrapper">
-                        <img src="Images/AboutPic.jpg">
+                        <img id ="pic" src="Images/AboutPic.jpg">
                     </div>
                     
-                    <div class="profileContentWrapper">
+                    <div id="content1" class="profileContentWrapper">
                         <h1>Hey everyone! This is my website</h1>
                         <p>This is my portfolio webpage where you can order my works of art</p>
-                        <p>My name is Coolio and i like to paint. Check out my works on the front page and consider supporting me by buying a painting</p>
+                        <p>My name is Coolio and I like to paint. Check out my works on the front page and consider supporting me by buying a painting</p>
                     </div>
                 </div>
             </div>
@@ -48,4 +48,38 @@
         </div>
     </body>
 
+<script src="jquery-3.5.1.js"></script>
+<script>  
+$(document).ready(function(){  
+    
+     $("#content1").css({
+         
+      color:'blue',
+      fontWeight:'bold'
+   
+     });
+    
+    
+    $("#brand1").css({
+        
+       color:'black',
+        fontWeight: 'bold'     
+    
+    });
+    
+    $("#brand1").hide().delay(1000).show(1000);
+    $("#content1").hide().delay(1000).fadeIn(1000);
+    $("#pic").hide().delay(1000).fadeIn(1000);
+    
+    
+});
+
+</script>    
 </html>
+
+
+        
+        
+        
+        
+        
