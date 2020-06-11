@@ -9,17 +9,51 @@
     </script>
 </head>
 <body>
-    
-    <div class ='container'>
+            <div class="container"> <!-- Everything on the page should be inside the container to be able to acess it easy from the stylesheet -->
+            <div class="navBarDiv"> <!-- The div class is a way to be able to select this "part" of the code. It is good when you want things at a specific spot on the page -->
+                <div class="leftSide"> <!-- Making a div class to seperate the navBar into left and right side -->
+                    <div class="navBarLinks"> <!-- This should be used for all links on the navBar -->
+                        <a href="index.html">Home</a> <!--This makes a link to another html page. This can also be used to acess other websites -->
+                    </div>
+                    <div class="navBarLinks">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="navBarLinks">
+                        <a href="upload.html">Upload</a>
+                    </div>
+                    <div class="navBarLinks">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="brand">
+                        <div>Group Coolio's</div>
+                    </div>
+                </div>
+            </div>
+            
+    <div class="twoColumnWrapper"> 
+        <div class="profileImageWrapper">
+                    <img id ="pic" src="Images/WhaleAsk.png">
+        </div>
+        <div class="profileContentWrapper">
+   <div class="formWrapper">  
+       On this page you are able to upload your own picture to the website using PHP. You just have to select file and upload it. 
+       <br><br>
+       
     <form method= 'post' action = "" enctype="multipart/form-data">
         <div class ='preview'>
-        <img src = "" id="img" width="100" height="100">
+        <img src = "" id="img" width="550" height="550">
         </div>
+        <br>
         <div>
              <input type ="file" id="file" name ="file">
             <input type= "button" class= 'button' value='Upload' id= "but_upload"name="">
         </div>
         </form>
+                </div>
+    </div>    
+  </div>              
     </div>
     <script type="text/javascript">
     
